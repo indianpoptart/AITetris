@@ -30,7 +30,7 @@ public class TetrisController {
     
     //the current piece in play or null;
     
-    //the piece which will be genereted next
+    //the piece which will be generated next
     public DisplayPiece nextPiece;
     public Move currentMove;
     

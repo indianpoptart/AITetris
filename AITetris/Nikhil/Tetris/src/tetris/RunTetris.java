@@ -33,6 +33,7 @@ import javax.swing.event.ChangeListener;
 /**
  *
  * @author justinbehymer
+ * @author NikhilParanjape
  */
 
 public class RunTetris extends JComponent {

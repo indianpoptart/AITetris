@@ -12,6 +12,10 @@ import AIHelper.FinalRater;
 /**
  *
  * @author justinbehymer
+ * @author nikhilparanjape
+ * 
+ * This is the brain part of the code, it decides which rotation is the best
+ * 
  */
 public class ITLPAI implements AI 
 {
@@ -20,7 +24,7 @@ BoardRater boardRater = new FinalRater();
     
 public Move bestMove(Board board, Piece piece, Piece nextPiece, int limitHeight) 
 {
-		double bestScore = 1e20;
+		double bestScore = 1e21;
 		int bestX = 0;
 		int bestY = 0;
 		Piece bestPiece = piece;
@@ -32,7 +36,7 @@ public Move bestMove(Board board, Piece piece, Piece nextPiece, int limitHeight)
 			final int xBound = board.getWidth() - current.getWidth() + 1;
 
 			// For current rotation, try all the possible columns
-			for (int x = 0; x < xBound; x++) {
+			for (int x = 0; x < xBound ; x++) {
 				int y = board.dropHeight(current, x);
 				// piece does not stick up too far
 				if ((y < yBound) && board.canPlace(current, x, y)) {
