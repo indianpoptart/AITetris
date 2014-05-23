@@ -1,4 +1,6 @@
 -------
+THIS PROJECT IS CLOSED
+-------
 Objective
 -------
 Our objective is to create an AI that will solve tetris for as long as possible. We will grade you on number of moves and the amount of time the game lasts. Below is information on the file structure and things youíll need.
